@@ -1,7 +1,6 @@
 #include <stdio.h>
-
-// ETHERNET FRAMEWORK FORMAT
-// #include <linux/if_ether.h>
+#include <stdint.h>
+#include <winsock2.h>
 
 struct eth_hdr
 {
@@ -9,12 +8,10 @@ struct eth_hdr
   unsigned char smac[6];
   uint16_t ethertype;
   unsigned char payload[];
-} _attribute_((packed));
+} __attribute__((packed));
 
 int main()
 {
 
-  
+  return 0;
 }
-
-
